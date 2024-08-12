@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CordovaApp</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="cordova.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="barkoderView"></div>
+        <div class="btnContainer">
+            <button id="startScanBtn" class="actionButton" disabled>Start Scanning</button>
+            <button id="stopScanBtn" class="actionButton" disabled>Stop Scanning</button>
+        </div>
+        <div id="resultContainer" class="resultContainer" style="display:none;">
+            <p>Result: <a id="resultText"></a></p>
+            <p>Type: <span id="resultType"></span></p>
+            <img id="resultImage" class="resultImage" alt="Scanned Thumbnail" />
+        </div>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
